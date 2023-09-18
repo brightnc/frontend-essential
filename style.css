@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+a:hover {
+  color: red;
+}
+
+.milestone-card {
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgb(0 0 0 / 0.1);
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0px 8px 10px;
+}
+.milestone-card ol {
+  list-style-type: circle;
+}
+
+.sing-up {
+  background-color: burlywood;
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+}
+.sing-up h2 {
+  text-transform: uppercase;
+}
+
+.sing-up form input {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.sing-up form input:focus {
+  background-color: gray;
+}
+.sing-up form {
+  text-align: left;
+}
+
+.sing-up-btn {
+  padding: 15px 32px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+.sing-up-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
