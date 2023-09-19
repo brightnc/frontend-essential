@@ -1,21 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+}
 body {
   background-color: #eee;
   font-family: "Poppins", sans-serif;
 }
-a:hover {
-  color: red;
+
+nav {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  box-shadow: 0 0 10px 5px rgb(0 0 0 / 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav-link > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link > a:hover {
+  cursor: pointer;
+  color: blue;
+}
+.milestone-container {
+  display: flex;
+  gap: 15px;
+  margin: 15px;
 }
 
 .milestone-card {
-  display: inline-block;
   background-color: white;
   box-shadow: 0 0 10px 5px rgb(0 0 0 / 0.1);
   width: 500px;
   height: auto;
   border-radius: 8px;
   padding: 10px;
-  margin: 0px 8px 10px;
 }
 .milestone-card ol {
   list-style-type: circle;
@@ -26,6 +54,8 @@ a:hover {
   width: 500px;
   padding: 10px;
   text-align: center;
+  margin: 15px;
+  border-radius: 8px;
 }
 .sing-up h2 {
   text-transform: uppercase;
