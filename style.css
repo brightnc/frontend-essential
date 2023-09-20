@@ -34,7 +34,9 @@ nav {
 .milestone-container {
   display: flex;
   gap: 15px;
-  margin: 15px;
+  margin: 15px auto;
+  max-width: 1080px;
+  width: 100%;
 }
 
 .milestone-card {
@@ -85,4 +87,15 @@ nav {
   background-color: white;
   color: black;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .milestone-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .milestone-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
