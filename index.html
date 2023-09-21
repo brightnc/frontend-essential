@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -26,7 +28,7 @@
     <div class="milestone-container">
       <div class="milestone-card">
         <h2 class="">Frontend Milestones</h2>
-        <ol>
+        <ol id="frontend-milestone">
           <li>Javascript</li>
           <li>HTML</li>
           <li>Semantic Elements</li>
@@ -41,7 +43,7 @@
 
       <div class="milestone-card">
         <h2 class="">Backend Milestones</h2>
-        <ol>
+        <ol id="backend-milestone">
           <li>Node.js</li>
           <li>Express</li>
           <li>middleware</li>
@@ -53,30 +55,66 @@
         </ol>
         <a href="https://academy.cleverse.com/">view course info</a>
       </div>
-    </div>
 
-    <!-- Input Form -->
+      <!-- Add Milestones List -->
 
-    <div class="sing-up">
-      <h2>Sing Up</h2>
-      <form action="">
-        <label for="username">Username</label>
-        <input type="text" id="username" class="register-input" required />
-        <br />
-        <label for="password">Password</label>
-        <input type="password" id="password" class="register-input" required />
-        <br />
-        <label for="email">Email</label>
-        <input type="email" id="email" class="register-input" required />
-        <br />
-        <label for="phone">Phone</label>
-        <input type="number" id="phone" class="register-input" required />
-        <br />
-        <label for="date_of_birth">Date of birth</label>
-        <input type="date" id="date_of_birth" class="register-input" required />
-        <br />
-        <button type="submit" class="sing-up-btn">Sing Up</button>
-      </form>
+      <div class="todo-milestone-container milestone-card"">
+        <div class="frontend-form">
+          <h2>Add Frontend Milestone</h2>
+          <form action="">
+            <label for="frontend-input">add frontend milestone</label>
+            <input type="text" id="frontend-input" />
+            <br />
+            <button type="submit" id="add-frontend">ADD</button>
+          </form>
+        </div>
+
+        <div class="back-end-form">
+          <h2>Add Backend Milestone</h2>
+          <form action="">
+            <label for="backend-input">add backend milestone</label>
+            <input type="text" id="backend-input" />
+            <br />
+            <button type="submit" id="add-backend">ADD</button>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- Sing Up -->
+
+
+      <div class="sing-up">
+        <h2>Sing Up</h2>
+        <form action="">
+          <label for="username">Username</label>
+          <input type="text" id="username" class="register-input" required />
+          <br />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="register-input"
+            required
+          />
+          <br />
+          <label for="email">Email</label>
+          <input type="email" id="email" class="register-input" required />
+          <br />
+          <label for="phone">Phone</label>
+          <input type="number" id="phone" class="register-input" required />
+          <br />
+          <label for="date_of_birth">Date of birth</label>
+          <input
+            type="date"
+            id="date_of_birth"
+            class="register-input"
+            required
+          />
+          <br />
+          <button type="submit" class="sing-up-btn">Sing Up</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
