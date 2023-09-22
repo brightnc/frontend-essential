@@ -10,7 +10,7 @@ const main = async () => {
 
     for (let i = 0; i < courses.length; i++) {
       //console.log(courses[i].courseNo);
-      const main = document.getElementById("test");
+      const main = document.getElementById("main-container");
 
       const newSection = document.createElement("section");
 
